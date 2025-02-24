@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   getWeatherBtn.addEventListener("click", async () => {
     const city = cityInput.value.trim();
     if (!city) return;
-    
+    console.log("hello");
     try {
       const weatherData = await fetchWeatherData(city);
       displayWeatherData(weatherData);
